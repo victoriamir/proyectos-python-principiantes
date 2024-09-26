@@ -1,0 +1,24 @@
+import random
+
+aleatorio = random.randint(1, 100) 
+intentos = 0  
+
+
+while True:
+ 
+    num = int(input("Ingresa un número entre 1 y 100: "))
+    
+  
+    intentos += 1
+    
+  
+    if num == aleatorio:
+        print("¡Correcto! Adivinaste el número")
+        break
+    elif num < aleatorio:
+        print("El número es mayor, volvé a intentar...")
+    else:
+        print("El número es menor, intentá de nuevo...")
+
+
+print(f"Fin del juego, hiciste {intentos} intentos.")
